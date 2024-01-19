@@ -3,6 +3,7 @@
     color: white;
     margin: 0px;
     padding: 0px;
+    font-family: 'Kanit', sans-serif;
 }
 h1{
     text-align: center;
@@ -13,22 +14,73 @@ h1{
 }
 h2{
     text-align: center;
+    margin: 10px;
+    color: red;
 }
 .container{
-    border: 2px solid white;
+    /* border: 3px solid white;
+    border-radius: 20px; */
     padding: 10px 10px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     height: 70%;
 }
 div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 10px 10px;
     margin: 10px 10px;
 }
-img{
+.face{
     height: 300px;
     width: 160px;
+    position: relative;    
+}
+.face:hover{
+    cursor: pointer;
+    
+}
+.face:active{
+    filter: invert();
+
+}
+
+#right_face{
+    animation: up_down 2s ease-in-out 1s infinite;
+    &:hover{
+        animation-play-state: paused;
+    }
+    
+}
+#left_face{
+    animation: down_up 2s ease-in-out 1s infinite;
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+@keyframes up_down {
+
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@keyframes down_up {
+
+    0%{
+        top: 100px;
+    }
+    50%{
+        top: 0px;
+    }
+    100%{
+        top: 100px;
+    }
+    
 }
 .hacker{
     display: flex;
@@ -50,4 +102,32 @@ input[type="submit"]{
     margin: 10px;
     border-radius: 5px;
     padding: 5px 5px;
+}
+#dp{
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 2px solid red;
+    border-radius: 18px;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0px;
+    padding: 0px 10px;
+}
+.userDP{
+    margin: 0px;
+}
+p{
+    margin: 10px;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
 }

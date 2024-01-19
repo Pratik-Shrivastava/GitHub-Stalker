@@ -18,26 +18,25 @@ async function getAccount(username) {
     insert.innerHTML = 
     `
     <div class="card">
-        <div>
-            <img src="${data.avatar_url}" alt="">
-        </div>
-        <div class="user-info">
-            <h2>${data.name}</h2>
-            <p>${data.bio}</p>
-
-            <ul class="info">
-                <li>${data.followers}<strong>Followers</strong></li>
-                <li>${data.following}<strong>Following</strong></li>
-                <li>${data.public_repos}<strong>Repos</strong></li>
-            </ul>
-
-            <div class="repos">
-                <a href="#" class="repo" target="_blank">Repo 1</a>
-                <a href="#" class="repo" target="_blank">Repo 2</a>
-                <a href="#" class="repo" target="_blank">Repo 3</a>
-            </div>
-        </div>
-    </div>
+                    <div class="userDP">
+                        <img src=${data.avatar_url} alt="" id="dp">
+                    </div>
+                    <div class="user-info">
+                        <h2>Target's Name is ${data.name}</h2>
+                        <p>${data.bio}</p>
+            
+                        <ul class="info">
+                            <li>${data.followers} <strong>Followers</strong></li>
+                            <li>${data.following} <strong>Following</strong></li>
+                            <li>${data.public_repos} <strong>Repos</strong></li>
+                        </ul>            
+                        <div class="repos">
+                            <a href="#" class="repo" target="_blank">Repo 1</a>
+                            <a href="#" class="repo" target="_blank">Repo 2</a>
+                            <a href="#" class="repo" target="_blank">Repo 3</a>
+                        </div>
+                    </div>
+                </div> 
     `
   }
 
