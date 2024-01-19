@@ -1,0 +1,53 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    margin: 30px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+}
+.container{
+    border: 2px solid white;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 70%;
+}
+div {
+    border: 2px solid red;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+img{
+    height: 300px;
+    width: 160px;
+}
+.hacker{
+    display: flex;
+    justify-content: center;
+    
+}
+label{
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+}
+input[type="text"]{
+    font-size: 20px;
+    margin: 10px;
+    width: 400px;
+}
+input[type="submit"]{
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
